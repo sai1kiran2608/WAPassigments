@@ -25,5 +25,4 @@ public class SecondAssignment {
 		System.out.println("\n" + inches + " inch = " + result + " cm.");
 
 	}
-
 }
