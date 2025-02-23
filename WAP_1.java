@@ -5,7 +5,7 @@ package com.saikiran.WAPassigments;
 import java.util.Scanner;
 
 //WAP that accepts 2 integers and a target. Validate if the sum of two numbers is equal to given target.
-public class FirstAssignment {
+public class WAP_1 {
 
 	public static int SumCheck(int integer_1, int integer_2, int target) {
 		int sum;

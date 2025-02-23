@@ -5,7 +5,7 @@ package com.saikiran.WAPassigments;
 import java.util.Scanner;
 
 //WAP to convert the given height in feet and inches to centimeters.
-public class ThirdAssignment {
+public class WAP_3 {
 
 	public static float HeightConverterFromFeetAndInchToCm(int feet, int inch){
 		float centimeters = (feet * 30.48f) + (inch * 2.54f);
