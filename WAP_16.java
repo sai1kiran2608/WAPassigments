@@ -14,7 +14,39 @@ import java.util.Scanner;
 public class WAP_16 {
 
 	public static void main(String[] args) {
-		
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Enter count of big bags (5 kg each): ");
+		int bigBags = scanner.nextInt();
+
+		System.out.print("Enter count of small bags (1 kg each): ");
+		int smallBags = scanner.nextInt();
+
+		System.out.print("Enter the kilos of material provided: ");
+		int totalKilos = scanner.nextInt();
+
+		scanner.close();
+
+		int bigBagUsed = (totalKilos / 5 < bigBags) ? totalKilos / 5 : bigBags;
+		totalKilos -= bigBagUsed * 5;
+
+		int smallBagUsed = (totalKilos < smallBags) ? totalKilos : smallBags;
+		totalKilos -= smallBagUsed;
+
+		if (bigBagUsed > 0) {
+			System.out.println("Big bags " + bigBagUsed + " can be packed");
+		}
+		if (bigBags - bigBagUsed > 0) {
+			System.out.println("Big bags " + (bigBags - bigBagUsed) + " cannot be packed");
+		}
+		if (smallBagUsed > 0) {
+			System.out.println("Small bags " + smallBagUsed + " can be packed");
+		}
+		if (smallBags - smallBagUsed > 0) {
+			System.out.println("Small bags " + (smallBags - smallBagUsed) + " cannot be packed");
+		}
+
 	}
 
 }
